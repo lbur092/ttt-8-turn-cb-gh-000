@@ -7,11 +7,14 @@ def DISPLAY_BOARD(board)
 end
 
 def VALID_MOVE?(board, index)
-  if index > -1 && index < 9 
-    if board[index] == " " || board[index] == "" || board[index] == nil
-      true
-    else
+  if index.between?(0, 8)
+    if position_taken?(board, index)
       false
+    else
+        true
     end
   end
 end
+
+def position_taken?()
+  if board[index] == " " || board[index] == "" || board[index] == nil
