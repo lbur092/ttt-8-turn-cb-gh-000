@@ -12,5 +12,6 @@ def VALID_MOVE?(board, index)
       true
     else
       false
+    end
   end
 end
