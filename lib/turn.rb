@@ -16,5 +16,10 @@ def VALID_MOVE?(board, index)
   end
 end
 
-def position_taken?()
+def position_taken?(board, index)
   if board[index] == " " || board[index] == "" || board[index] == nil
+    false
+  else
+    true
+  end
+end
