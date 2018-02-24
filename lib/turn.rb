@@ -6,13 +6,13 @@ def DISPLAY_BOARD(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-def VALID_MOVE?(board, index)
+def valid_move?(board, index)
   if index.between?(0, 8)
-    if position_taken?(board, index)
-      false
-    else
-        true
+    if !position_taken?(board, index)
+      true
     end
+  else
+    false
   end
 end
 
